@@ -11,9 +11,9 @@ type Props = {
 };
 
 const gradients: Record<Props["tone"], [string, string]> = {
-  readiness: ["#7fdcbe", "#3aa88a"],
-  sleep: ["#9b8cff", "#6553d4"],
-  activity: ["#ff9f6b", "#e06a3e"],
+  readiness: ["#f8b4c0", "#e89aae"],
+  sleep: ["#c9b6ff", "#a894e8"],
+  activity: ["#ffb088", "#e89560"],
 };
 
 export function ScoreRing({ label, score, tone, caption, delta }: Props) {
@@ -92,8 +92,8 @@ export function ScoreRing({ label, score, tone, caption, delta }: Props) {
 }
 
 function scoreWord(n: number) {
-  if (n >= 85) return "Optimal";
-  if (n >= 70) return "Good";
-  if (n >= 60) return "Fair";
-  return "Pay Attention";
+  if (n >= 85) return "Glowing";
+  if (n >= 70) return "Balanced";
+  if (n >= 60) return "Soft";
+  return "Gentle pause";
 }

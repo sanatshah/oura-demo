@@ -79,23 +79,23 @@ export const weeklyActivity = metrics.slice(-7).map((m) => ({
 export const insights = [
   {
     id: "recovery",
-    title: "Your body is well recovered",
+    title: "A soft green light for your nervous system",
     detail:
-      "HRV trended 12% above your 14-day baseline last night, and resting heart rate was low. Consider a higher-intensity workout today.",
+      "Your heart has been settling nicely at night — notice how steadier mornings feel. If you move today, let it be because it sounds comforting, not because you should.",
     tone: "positive" as const,
   },
   {
     id: "sleep-consistency",
-    title: "Sleep timing is drifting later",
+    title: "Bedtime has been drifting a little",
     detail:
-      "Bedtime has shifted 42 minutes later this week. Going to bed earlier tonight could improve tomorrow's readiness.",
+      "Your wind-down is landing later than last week. What if tonight you dimmed the room ten minutes earlier — not as a rule, as a kindness to tomorrow-you?",
     tone: "warning" as const,
   },
   {
     id: "temp",
-    title: "Skin temperature slightly elevated",
+    title: "Temperature is nudging upward",
     detail:
-      "+0.4°F above baseline for two consecutive nights. Monitor for signs of illness or late-day strain.",
+      "Skin temperature has been a touch above your usual — sometimes that tracks with your cycle shifting. Pause and notice energy and mood; your journal might love a line about it.",
     tone: "info" as const,
   },
 ];

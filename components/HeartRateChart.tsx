@@ -35,13 +35,13 @@ export function HeartRateChart() {
           <BarChart data={hourlyHeartRate} margin={{ top: 0, right: 0, left: -32, bottom: 0 }}>
             <XAxis
               dataKey="hour"
-              tick={{ fill: "#8b90a2", fontSize: 10 }}
+              tick={{ fill: "#8b92a8", fontSize: 10 }}
               axisLine={false}
               tickLine={false}
               interval={3}
             />
             <YAxis
-              tick={{ fill: "#8b90a2", fontSize: 10 }}
+              tick={{ fill: "#8b92a8", fontSize: 10 }}
               axisLine={false}
               tickLine={false}
               domain={[40, 90]}
@@ -49,14 +49,14 @@ export function HeartRateChart() {
             <Tooltip
               cursor={{ fill: "rgba(255,255,255,0.04)" }}
               contentStyle={{
-                background: "#0f1016",
-                border: "1px solid rgba(255,255,255,0.08)",
+                background: "#221e1a",
+                border: "1px solid rgba(255,255,255,0.06)",
                 borderRadius: 12,
                 fontSize: 12,
               }}
-              labelStyle={{ color: "#c4c7d1" }}
+              labelStyle={{ color: "#c5c9d4" }}
             />
-            <Bar dataKey="bpm" fill="#ff6b9d" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="bpm" fill="#ff8aa8" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

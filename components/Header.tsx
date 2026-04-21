@@ -16,12 +16,15 @@ export function Header() {
           {today}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight mt-1">
-          Good morning, Sunny
+          Today&apos;s rhythm
         </h1>
+        <p className="text-sm text-ink-300 mt-1.5">
+          Good morning — notice how rest, breath, and temperature show up before you plan the day
+        </p>
       </div>
 
       <div className="flex items-center gap-3">
-        <div className="hidden md:flex items-center gap-4 px-4 py-2 rounded-full bg-ink-850/60 border border-white/5 text-xs text-ink-300">
+        <div className="hidden md:flex items-center gap-4 px-4 py-2 rounded-full bg-ink-850/60 border border-white/[0.06] text-xs text-ink-300">
           <div className="flex items-center gap-1.5">
             <div className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-oura-readiness opacity-75" />
@@ -39,12 +42,12 @@ export function Header() {
           </div>
         </div>
 
-        <button className="h-10 w-10 grid place-items-center rounded-full bg-ink-850/60 border border-white/5 hover:bg-ink-800 transition">
+        <button className="h-10 w-10 grid place-items-center rounded-full bg-ink-850/60 border border-white/[0.06] hover:bg-ink-800 transition">
           <Bell className="h-4 w-4 text-ink-200" />
         </button>
 
-        <button className="flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-ink-850/60 border border-white/5 hover:bg-ink-800 transition">
-          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-oura-sleep to-oura-heart grid place-items-center text-xs font-semibold">
+        <button className="flex items-center gap-2 pl-1 pr-3 py-1 rounded-full bg-ink-850/60 border border-white/[0.06] hover:bg-ink-800 transition">
+          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-oura-readiness to-oura-sleep grid place-items-center text-xs font-semibold text-ink-950">
             SD
           </div>
           <span className="text-sm">Sunny</span>

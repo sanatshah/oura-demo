@@ -4,10 +4,10 @@ import { Moon } from "lucide-react";
 import { sleepStages, today } from "@/lib/mock-data";
 
 const stages = [
-  { key: "awake" as const, label: "Awake", color: "#585c6c" },
-  { key: "rem" as const, label: "REM", color: "#9b8cff" },
-  { key: "light" as const, label: "Light", color: "#6bc4ff" },
-  { key: "deep" as const, label: "Deep", color: "#3a55a8" },
+  { key: "awake" as const, label: "Awake", color: "#5c6278" },
+  { key: "rem" as const, label: "REM", color: "#c9b6ff" },
+  { key: "light" as const, label: "Light", color: "#b8d4ff" },
+  { key: "deep" as const, label: "Deep", color: "#b89fd4" },
 ];
 
 export function SleepBreakdown() {

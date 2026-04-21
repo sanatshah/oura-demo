@@ -15,8 +15,8 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { label: "Today", icon: Home, active: true },
-  { label: "Sleep", icon: Moon },
   { label: "Readiness", icon: Sparkles },
+  { label: "Sleep", icon: Moon },
   { label: "Activity", icon: Activity },
   { label: "Heart", icon: Heart },
   { label: "Body", icon: Thermometer },
@@ -25,7 +25,7 @@ const navItems = [
 
 export function Sidebar() {
   return (
-    <aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-60 flex-col border-r border-white/5 bg-ink-900/60 backdrop-blur-xl p-5 z-20">
+    <aside className="hidden lg:flex fixed left-0 top-0 bottom-0 w-60 flex-col border-r border-white/[0.06] bg-ink-900/60 backdrop-blur-xl p-5 z-20">
       <div className="flex items-center gap-2 px-2 mb-8">
         <div className="relative h-9 w-9 rounded-full bg-gradient-to-br from-oura-readiness via-oura-sleep to-oura-activity p-[2px]">
           <div className="h-full w-full rounded-full bg-ink-950 flex items-center justify-center">
@@ -57,7 +57,7 @@ export function Sidebar() {
         ))}
       </nav>
 
-      <div className="border-t border-white/5 pt-4 space-y-1">
+      <div className="border-t border-white/[0.06] pt-4 space-y-1">
         <button className="w-full flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-ink-300 hover:bg-white/[0.03] hover:text-ink-100">
           <User className="h-4 w-4" />
           <span>Profile</span>
